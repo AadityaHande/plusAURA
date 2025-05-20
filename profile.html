@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="aurafit.png" type="image/x-icon" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AURAfit</div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="diet.html">Diet</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><span id="username">Loading...</span></li>
+      <li><button id="logoutBtn">Logout</button></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Edit Your Profile</h1>
+      <p>Update your information to get the best recommendations!</p>
+    </div>
+  </header>
+
+  <section class="profile-section">
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" value="John Doe" />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" value="25" />
+
+      <label for="height">Height</label>
+      <input type="number" id="height" name="height" value="175" />
+
+      <label for="weight">Weight</label>
+      <input type="number" id="weight" name="weight" value="70" />
+
+      <button type="submit">Save</button>
+    </form>
+  </section>
+</body>
+</html>

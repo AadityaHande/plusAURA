@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="aurafit.png" type="image/x-icon" />
+  <title>Progress</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AURAfit</div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="diet.html">Diet</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><span id="username">Loading...</span></li>
+      <li><button id="logoutBtn">Logout</button></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Progress Overview</h1>
+      <p>Track your progress and celebrate milestones!</p>
+    </div>
+  </header>
+
+  <section class="progress-charts">
+    <div class="tile">
+      <h3>Your Progress</h3>
+      <canvas id="progressChart2" width="400" height="200"></canvas>
+    </div>
+  </section>
+
+  <script>
+    const ctx2 = document.getElementById('progressChart2').getContext('2d');
+    const progressChart2 = new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        datasets: [{
+          label: 'Weight Loss',
+          data: [85, 80, 75, 70, 68],
+          fill: false,
+          borderColor: '#4caf50',
+          tension: 0.1
+        }]
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURAfit Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <!-- Dashboard script -->
+  <script type="module" src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AURAfit</div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="diet.html">Diet</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><span id="userNameNav"><i class="fa fa-user"></i> Loading...</span></li>
+      <li><button id="logoutBtn"><i class="fa fa-sign-out-alt"></i> Logout</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome back, <span id="userNameHero">Athlete</span>!</h1>
+      <p>Your personalized fitness journey starts here.</p>
+    </div>
+  </header>
+
+  <!-- Summary Cards -->
+  <main class="dashboard-content">
+    <div id="card-workout" class="tile">
+      <h3><i class="fa fa-dumbbell"></i> Today’s Workout</h3>
+      <p id="todayWorkout">Loading...</p>
+    </div>
+    <div id="card-diet" class="tile">
+      <h3><i class="fa fa-utensils"></i> Today’s Diet</h3>
+      <p id="todayDiet">Loading...</p>
+    </div>
+    <div id="card-bmi" class="tile">
+      <h3><i class="fa fa-weight-scale"></i> Your BMI</h3>
+      <p id="userBMI">--</p>
+    </div>
+    <div id="card-tip" class="tile">
+      <h3><i class="fa fa-lightbulb"></i> Tip of the Day</h3>
+      <p id="tipOfDay">Loading...</p>
+    </div>
+  </main>
+
+  <!-- Progress Chart Section -->
+  <section class="chart-section">
+    <div class="tile">
+      <h3><i class="fa fa-chart-line"></i> Weekly Progress</h3>
+      <canvas id="progressChart"></canvas>
+    </div>
+    <div class="tile">
+      <h3><i class="fa fa-image"></i> Motivation</h3>
+      <img src="motiv.jpg" alt="Motivation" class="bodybuilder-image">
+    </div>
+  </section>
+</body>
+</html>

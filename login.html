@@ -1,0 +1,33 @@
+<!-- /AURAfit/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/auth.css"/>
+  <title>Login | AURAfit</title>
+</head>
+<body>
+  <main class="auth-container">
+    <h1>Welcome Back</h1>
+    <form id="login-form" class="auth-form">
+      <div class="input-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required />
+      </div>
+      <div class="input-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required minlength="6" />
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <button id="google-login" class="btn google-btn">
+      <img src="assets/images/google-logo.png" alt="" /> Login with Google
+    </button>
+    <p class="toggle-link">
+      Don’t have an account? <a href="signup.html">Sign Up</a>
+    </p>
+  </main>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

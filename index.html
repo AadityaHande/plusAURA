@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURAfit – Smart Personalized Fitness & Health Assistant</title>
+  <link rel="stylesheet" href="sty.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Orbitron:wght@600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <nav data-aos="fade-down">
+    <div class="container nav-inner">
+      <div class="logo">AURAfit</div>
+      <div class="menu">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="auth">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="signup.html" class="btn-primary">Signup</a>
+      </div>
+    </div>
+  </nav>
+  <section id="hero" data-aos="fade" data-aos-duration="1200">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Transform Your Fitness Journey</h1>
+      <p>Your AI-powered, personalized health & fitness assistant.</p>
+      <a href="signup.html" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+  <section id="features" data-aos="fade-up">
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="cards">
+        <div class="card">
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24">
+			<path d="M4 2h2v2h12V2h2v2h1a1 1 0 011 1v16a1 1 0 01-1 1H3a1 1 0 01-1-1V5a1 1 0 011-1h1V2zm0 4v14h16V6H4zm3 3h6v2H7V9zm0 4h10v2H7v-2z"/>
+			</svg>
+          <h3>Personalized Plans</h3>
+          <p>AI-driven workouts & meal plans tailored to you.</p>
+        </div>
+        <div class="card">
+			<div class="icon-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24">
+				<path d="M12 2a7 7 0 017 7c0 4.418-7 13-7 13S5 13.418 5 9a7 7 0 017-7zm0 9a2 2 0 100-4 2 2 0 000 4z"/>
+			</svg>
+			</div>
+          <h3>Real-Time Tracking</h3>
+          <p>Live metrics, wearables sync, and smart notifications.</p>
+        </div>
+        <div class="card">
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24">
+			<path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4s-4 1.79-4 4 1.79 4 4 4zm0 2c-3.33 0-6 2.24-6 5v1h12v-1c0-2.76-2.67-5-6-5z"/>
+			</svg>
+          <h3>Virtual Coaching</h3>
+          <p>Posture analysis & form correction via your webcam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reviews" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+      <h2>What Users Say</h2>
+      <div class="review-carousel">
+        <div class="review-card">
+          <p>“AURAfit motivates me daily with custom workouts!”</p>
+          <span>— MS Dhoni</span>
+        </div>
+        <div class="review-card">
+          <p>“I love the real-time insights and friendly UI.”</p>
+          <span>— Virat Kohli</span>
+        </div>
+        <div class="review-card">
+          <p>“Best fitness app I’ve used—truly personalized!”</p>
+          <span>— Rohit Sharma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" data-aos="fade-up" data-aos-delay="200">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <div class="team-cards">
+        <div class="team-member">
+          <img src="img/a1.jpg" alt="Alice Johnson"/>
+          <h3>Aaditya Hande</h3>
+          <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="img/a2.jpg" alt="Bob Williams"/>
+          <h3>Chetan Gore</h3>
+          <p>AI Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="img/a3.jpg" alt="Charlie Brown"/>
+          <h3>Om Rahatal</h3>
+          <p>UX/UI Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" data-aos="fade-up" data-aos-delay="300">
+    <div class="container contact-wrapper">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to learn more? We’re here to help.</p>
+        <ul class="info-list">
+          <li><strong>📍 Address:</strong> 123 Fitness Ave, Wellness City</li>
+          <li><strong>📧 Email:</strong> support@aurafit.com</li>
+          <li><strong>📞 Phone:</strong> +1 (800) 123-FIT</li>
+        </ul>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <form class="contact-form glass-card">
+        <h2>Send a Message</h2>
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " required/>
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required/>
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder=" " rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+		<div id="form-success" class="success-message" style="display: none;">
+			✅ Message sent successfully!
+		</div>
+      </form>
+    </div>
+  </section>
+  <div id="back-to-top">&uarr;</div>
+  <footer data-aos="fade-up" data-aos-delay="400">
+    <div class="container">
+      <p>&copy; 2025 AURAfit. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js" defer></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+  <script>
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const rect = btn.getBoundingClientRect();
+        btn.style.setProperty('--click-x', `${e.clientX - rect.left}px`);
+        btn.style.setProperty('--click-y', `${e.clientY - rect.top}px`);
+      });
+    });
+
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const carousel = document.querySelector('.review-carousel');
+    let isDown = false, startX, scrollLeft;
+    carousel.addEventListener('mousedown', e => {
+      isDown = true;
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    });
+    carousel.addEventListener('mouseleave', () => isDown = false);
+    carousel.addEventListener('mouseup', () => isDown = false);
+    carousel.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      carousel.scrollLeft = scrollLeft - walk;
+    });
+	
+	  const form = document.querySelector('.contact-form');
+	const successMsg = document.getElementById('form-success');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); 
+
+    successMsg.style.display = 'block';
+
+    form.reset();
+
+    setTimeout(() => {
+      successMsg.style.display = 'none';
+    }, 5000);
+  });
+  </script>
+</body>
+</html>

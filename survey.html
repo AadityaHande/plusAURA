@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURAfit – Health Survey</title>
+  <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+  <div class="survey-container">
+    <div class="progress-bar"><div id="progress"></div></div>
+
+    <form id="surveyForm">
+
+      <!-- Form Steps (17 questions as before) -->
+      <div class="form-step active">
+        <label for="age">Your Age</label>
+        <input type="number" name="age" required>
+      </div>
+
+      <div class="form-step">
+        <label for="gender">Gender</label>
+        <select name="gender" required>
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Non-binary</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label for="height">Height (cm)</label>
+        <input type="number" name="height" required>
+      </div>
+
+      <div class="form-step">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" name="weight" required>
+      </div>
+
+      <div class="form-step">
+        <label for="goal">Fitness Goal</label>
+        <select name="goal" required>
+          <option value="">Select</option>
+          <option>Weight Loss</option>
+          <option>Muscle Gain</option>
+          <option>Endurance</option>
+          <option>Flexibility</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label for="activity_level">Current Activity Level</label>
+        <select name="activity_level" required>
+          <option value="">Select</option>
+          <option>Sedentary</option>
+          <option>Light</option>
+          <option>Moderate</option>
+          <option>Intense</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label for="diet_type">Preferred Diet Type</label>
+        <select name="diet_type" required>
+          <option value="">Select</option>
+          <option>Vegetarian</option>
+          <option>Vegan</option>
+          <option>Keto</option>
+          <option>Balanced</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label for="food_exclusions">Food Exclusions</label>
+        <input type="text" name="food_exclusions" placeholder="e.g. dairy, gluten">
+      </div>
+
+      <div class="form-step">
+        <label for="health_issues">Existing Health Conditions</label>
+        <textarea name="health_issues" rows="3" placeholder="e.g. asthma, diabetes"></textarea>
+      </div>
+
+      <div class="form-step">
+        <label for="medications">Medications?</label>
+        <input type="text" name="medications" placeholder="Optional">
+      </div>
+
+      <div class="form-step">
+        <label for="injuries">Past Injuries/Surgery</label>
+        <input type="text" name="injuries" placeholder="Optional">
+      </div>
+
+      <div class="form-step">
+        <label for="sleep">Sleep (hrs)</label>
+        <input type="number" name="sleep" required>
+      </div>
+
+      <div class="form-step">
+        <label for="stress">Stress (1–10)</label>
+        <input type="number" name="stress" min="1" max="10" required>
+      </div>
+
+      <div class="form-step">
+        <label for="water">Water Intake (litres/day)</label>
+        <input type="number" step="0.1" name="water" required>
+      </div>
+
+      <div class="form-step">
+        <label for="smoke">Do you smoke?</label>
+        <select name="smoke" required>
+          <option value="">Select</option>
+          <option>No</option>
+          <option>Occasionally</option>
+          <option>Yes</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label for="alcohol">Do you drink alcohol?</label>
+        <select name="alcohol" required>
+          <option value="">Select</option>
+          <option>No</option>
+          <option>Occasionally</option>
+          <option>Yes</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label for="motivation">What motivates you?</label>
+        <textarea name="motivation" rows="3" required></textarea>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation">
+        <button type="button" id="prevBtn">Back</button>
+        <button type="button" id="nextBtn">Next</button>
+        <button type="submit" id="submitBtn">Finish</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script type="module" src="js/survey.js"></script>
+</body>
+</html>
